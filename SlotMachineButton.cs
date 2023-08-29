@@ -22,6 +22,6 @@ public class SlotMachineButton : MonoBehaviour
     void OnMouseDown()
     {
         onSlot = true;
-        //Debug.Log("我按了");
+        Debug.Log("我按了");
     }
 }

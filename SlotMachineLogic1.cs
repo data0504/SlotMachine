@@ -25,7 +25,7 @@ public class SlotMachineLogic1 : MonoBehaviour
         //    Slot2.Shuffle();
         //}
 
-        Slot2.Shuffle();
+     
 
     }
 

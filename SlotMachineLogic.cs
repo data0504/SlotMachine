@@ -6,25 +6,28 @@ public class SlotMachineLogic : MonoBehaviour
 {
     public SlotMachineButton Button;
     public SlotMachineSort Slot;
-    public SlotMachineSort1 Slot1;
+    //public SlotMachineSort1 Slot1;
 
 
 
     private void Start()
     {
-        Slot.TestObjInsertSprite();
+
     }
 
     void Update()
     {
-        //if (Button.GetOnSlot())
-        //{
+        if (Button.GetOnSlot())
+        {
+            if (Slot.RandomResult())
+            {
+                Slot.LShuffle();
+                Slot.CShuffle();
+                Slot.RShuffle();
 
-        //}
+            }
 
-        Slot1.Shuffle();
+        }
 
-
-        //Debug.Log($"�ڰʤF");
     }
 }
